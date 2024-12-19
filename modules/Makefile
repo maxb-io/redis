@@ -1,5 +1,5 @@
 
-SUBDIRS = redisjson redistimeseries redisbloom redisearch
+SUBDIRS = redisjson redistimeseries redisbloom
 
 define submake
 	for dir in $(SUBDIRS); do $(MAKE) -C $$dir $(1); done
